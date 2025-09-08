@@ -38,7 +38,7 @@ public class SIC {
 
                     // Validation check
                     if (p <= 0 || t <= 0 || r <= 0) {
-                        JOptionPane.showMessageDialog(jf, "Invalid!", "Error", JOptionPane.ERROR_MESSAGE);
+                        JOptionPane.showMessageDialog(jf, "Invalid Data!", "Error", JOptionPane.ERROR_MESSAGE);
                         t4.setText(""); // clear result field
                         return; // stop calculation
                     }
@@ -46,7 +46,7 @@ public class SIC {
                     float si = (p * t * r) / 100.0f;
                     t4.setText("" + si);
                 } catch (NumberFormatException ex) {
-                    JOptionPane.showMessageDialog(jf, "Please enter valid numeric values!", "Error", JOptionPane.ERROR_MESSAGE);
+                    JOptionPane.showMessageDialog(jf, "Invalid Data!", "Error", JOptionPane.ERROR_MESSAGE);
                 }
             }
         });
