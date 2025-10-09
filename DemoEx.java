@@ -69,3 +69,37 @@
 //     }
 // }
 
+//Q7:
+// class Demo{
+//     int num;
+//     Demo(){
+//         this(100);
+//         System.out.println("Default Constructor");
+//     }
+//     Demo(int n){
+//         num = n;
+//         System.out.println("Parameterized Constructor");
+//     }
+// }
+// public class Main{
+//     public static void main(String[] args) {
+//         Demo obj = new Demo();
+//     }
+// }
+
+// Q8:
+class CustomException extends Exception{
+    public CustomException(String message){
+        super(message);
+    }
+}
+public class DemoEx{
+    public static void main(String[] args) {
+        try{
+            throw new CustomException("Custom error occured");
+        } catch(CustomException e){
+            System.out.println(e.getMessage());
+        }
+    }
+}
+
